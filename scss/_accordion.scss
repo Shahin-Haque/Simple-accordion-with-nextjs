@@ -1,0 +1,42 @@
+.faq__wrapper {
+  padding: 10px;
+  margin-block: 20px;
+  border: 1px solid $primary-clr-light;
+  border-radius: 6px;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    border-color: $primary-clr;
+  }
+  .faq {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .ans {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  .open.ans {
+    max-height: 200px;
+    padding-block: 5px;
+    opacity: 1;
+    border-top: 1px solid #bcb8fc9f;
+  }
+  .arrowUp {
+    transition: all 300ms ease-in-out;
+  }
+  .open.arrowUp {
+    transform: rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+  }
+}

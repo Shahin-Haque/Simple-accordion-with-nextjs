@@ -1,0 +1,48 @@
+$primary-clr: #6c63ff;
+$primary-clr-light: #ccc9ff9f;
+//
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+}
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+h1 {
+  text-align: center;
+}
+h4 {
+  transition: all 300ms ease-in-out;
+  opacity: 0.8;
+  color: #39347b;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+p {
+  color: #39347b;
+  font-size: 1rem;
+}
+main {
+  max-width: 80%;
+  margin: auto;
+  padding: 30px;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
